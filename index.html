@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>TaskFlow</h1>
+        <input type="text" id="search-input" placeholder="Search tasks...">
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </nav>
+
+    <main>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="What needs to be done?" required>
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <div class="board-wrapper" id="board">
+            <div class="column" id="todo-column">
+                <h2>To Do</h2>
+                <div class="task-list"></div>
+            </div>
+            
+            <div class="column" id="in-progress-column">
+                <h2>In Progress</h2>
+                <div class="task-list"></div>
+            </div>
+            
+            <div class="column" id="done-column">
+                <h2>Done</h2>
+                <div class="task-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
